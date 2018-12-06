@@ -1,3 +1,5 @@
+REQUIRES PoSh (PowerShell) 5.0+ ( http://aka.ms/wmf5download )
+
 # MMPoSh
 Maxmind GeoLite Powershell Implementation
 I wrote this in a 2-3 hours with minimal testing based on a rewrite of our code for IPINFO so YMMV : )
