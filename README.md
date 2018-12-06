@@ -1,6 +1,6 @@
 # MMPoSh
 Maxmind GeoLite Powershell Implementation
-  I wrote this in a 2-3 hours with minimal testing based on a rewrite of our code for IPINFO so YMMV : )
+I wrote this in a 2-3 hours with minimal testing based on a rewrite of our code for IPINFO so YMMV : )
 
 .SYNOPSIS 
 (Version 1.0)
@@ -9,7 +9,7 @@ Returns GeoLocation Information
 
 .DESCRIPTION
 Returns GeoLocation Information from MaxMind Local Databases for the specified IP(s)
-    
+
 .SETUP
 Step 0: Create folders (powershell commands)
   new-item -Type directory c:\GeoLocate
@@ -20,25 +20,25 @@ Step 1: Download Following Packages and UNZIP them
   1: https://www.nuget.org/packages/MaxMind.Db/	
   2: https://www.nuget.org/packages/MaxMind.GeoIP2/
   3: https://www.nuget.org/packages/Newtonsoft.Json/
-
+  
 Step 2: Copy DLLs from UNZIPPED packages to DLL directory
   1: .\maxmind.db.2.4.0\lib\net45\MaxMind.Db.dll -> c:\GeoLocate\DLLs
   2: .\maxmind.geoip2.3.0.0\lib\net45\MaxMind.GeoIP2.dll -> c:\GeoLocate\DLLs
   3: .\newtonsoft.json.12.0.1\lib\net45\Newtonsoft.Json.dll -> c:\GeoLocate\DLLs
- 
+  
 Step 3: Download Databases from FREE GeoLite API
-  https://dev.maxmind.com/geoip/geoip2/geolite2/#MaxMind_APIs
+https://dev.maxmind.com/geoip/geoip2/geolite2/#MaxMind_APIs
   Put all extracted DBs (mmdb files) in c:\GeoLocate\DBs
   Currently: City, County and ASN.
-
+ 
   .PARAMETER InputPath
-    Specifies the path to the CSV-based input file.
+  Specifies the path to the CSV-based input file.
 
   .PARAMETER OutputPath
-    Specifies the name and path for the CSV-based output file. By default, 
-    the output filename is the "GEO-" prepended to the supplied inputfile
+  Specifies the name and path for the CSV-based output file. By default, 
+  the output filename is the "GEO-" prepended to the supplied inputfile
 
-   .INPUTS
+  .INPUTS
      The name of a CSV File containing:
        IP addresses (Property Name / Heading) is ip.
 
