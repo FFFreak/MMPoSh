@@ -1,8 +1,7 @@
 ﻿<#  Get-IPGeoLoc.ps1
            .SYNOPSIS 
-           (Version 1.1)
+           (Version 1.0)
            Lookup all users for the specified IPs with MaxMind Geolocation with local databases.
-           Additionally, if a user is a STAFF member also from ipinfo.io website.
            Returns GeoLocation Information 
 
            .DESCRIPTION
